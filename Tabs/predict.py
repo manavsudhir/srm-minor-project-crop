@@ -44,7 +44,7 @@ def app(df, X, y):
         prediction, score = predict(X, y, features)
         st.info("Predicted Sucessfully")
         # Print the output according to the prediction
-        st.success(str(round(prediction[0],2)) + " Hectares")
+        st.success(str(round(prediction[0],2)) + " Tons per Hectare")
         
         # Print teh score of the model 
         st.write("The model used is trusted by doctor and has an accuracy of ", round((score*100),2),"%")
