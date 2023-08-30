@@ -5,7 +5,7 @@ import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from sklearn import tree
+
 import streamlit as st
 
 
@@ -20,7 +20,7 @@ def app(df, X, y):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     # Set the page title
-    st.title("Visualise the Diabetes Prediction Web app")
+    st.title("Visualise the Harvest Yield Prediction Web app")
 
     # Create a checkbox to show correlation heatmap
     if st.checkbox("Show the correlation heatmap"):
