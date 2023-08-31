@@ -22,16 +22,7 @@ def app(df, X, y):
     # Set the page title
     st.title("Visualise the Harvest Yield Prediction Web app")
 
-    # Create a checkbox to show correlation heatmap
-    if st.checkbox("Show the correlation heatmap"):
-        st.subheader("Correlation Heatmap")
-
-        fig = plt.figure(figsize = (10, 6))
-        ax = sns.heatmap(df.iloc[:, 1:].corr(), annot = True)   # Creating an object of seaborn axis and storing it in 'ax' variable
-        bottom, top = ax.get_ylim()                             # Getting the top and bottom margin limits.
-        ax.set_ylim(bottom + 0.5, top - 0.5)                    # Increasing the bottom and decreasing the top margins respectively.
-        st.pyplot(fig)
-
+  
     if st.checkbox("Nitrogen Level vs Yield_ton_per_hectare"):
         sns.color_palette("rocket", as_cmap=True)
         ax=sns.scatterplot(x="N",y="Yield_ton_per_hec",data=df)
