@@ -25,6 +25,8 @@ def app(df):
     if st.checkbox("View Summary"):
         st.dataframe(df.describe())
 
+    if st.checkbox("View dataset dimensions"):
+        st.success(df.shape)
     # Create multiple check box in row
     col_name, col_dtype, col_data = st.columns(3)
 
