@@ -38,9 +38,4 @@ def app(df, X, y):
         ax=sns.scatterplot(x="K",y="Yield_ton_per_hec",data=df)
         st.pyplot()
 
-    if st.checkbox("Show Histogram"):
-        sns.color_palette("rocket", as_cmap=True)
-        ax=sns.histplot(data=df,x="pH",y="Yield_ton_per_hec")
-        st.pyplot()
-
-    
+   
