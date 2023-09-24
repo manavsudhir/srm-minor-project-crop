@@ -47,4 +47,4 @@ def app(df, X, y):
         st.success(str(round(prediction[0],2)) + " Tons per Hectare")
         
         # Print teh score of the model 
-        st.write("The model used is trusted by doctor and has an accuracy of ", round((score*100),2),"%")
+        st.write("The model used is trusted by agriculturalists and has an accuracy of ", round((score*100),2),"%")
