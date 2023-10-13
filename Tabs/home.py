@@ -7,10 +7,10 @@ def app():
     """This function create the home page"""
     
     # Add title to the home page
-    st.title("Harvest Quantity Estimation System")
+    st.title("Minor Project Crop yeild prediction")
 
     # Add image to the home page
-    st.image("./images/home.png")
+    st.image("./download.png")
 
     # Add brief describtion of your web app
     st.markdown(
